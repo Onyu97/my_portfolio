@@ -1,10 +1,18 @@
 # My_Portfolio
 Hwang Onyu.
+황온유
 
-portfolio for what can I do. 
-
+성균관대학교 
+글로벌바이오메디컬공학 / 전자전기공학부 재학
 
 I want to show my working result(or resumed). 
+
+
+<ol> My skill
+  team project
+  study(ongoing interest)
+  
+  
 
 ```
 SS_2018_project
@@ -13,7 +21,7 @@ psychtoolbox를 이용한 심리학 실험 구현
 Matlab
 
 for more information, go to SS_2018_project.md 
-<br><br>
+<br><br><br>
 
 
 ```
