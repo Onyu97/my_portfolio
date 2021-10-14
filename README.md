@@ -8,9 +8,9 @@ Hwang Onyu.
 I want to show my working result(or resumed). 
 
 
-<ul> My skill</ul>
-<ul>team project</ul>
-<ul>study(ongoing interest)</ul>
+<ul> 1. My skill</ul>
+<ul> 2. team project</ul>
+<ul> 3. study(ongoing interest)</ul>
   
   
 
