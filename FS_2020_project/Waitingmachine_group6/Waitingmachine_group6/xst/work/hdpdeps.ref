@@ -1,0 +1,61 @@
+V3 39
+FL C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd 2020/12/09.03:07:33 P.20131013
+FL C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd 2020/12/09.03:03:56 P.20131013
+FL C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd 2020/12/08.17:22:14 P.20131013
+FL C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd 2020/12/09.03:06:46 P.20131013
+FL C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd 2020/12/09.03:08:05 P.20131013
+FL C:/logiccircuit/Waitinglist_onyu/clock.vhd 2020/12/08.03:37:25 P.20131013
+FL C:/logiccircuit/Waitinglist_onyu/data.vhd 2020/12/08.03:44:32 P.20131013
+FL C:/logiccircuit/Waitinglist_onyu/LCD_display.vhd 2020/12/03.19:57:15 P.20131013
+FL C:/logiccircuit/Waitinglist_onyu/mode.vhd 2020/12/03.20:26:07 P.20131013
+FL C:/logiccircuit/Waitinglist_onyu/waitinglist.vhd 2020/12/08.03:41:43 P.20131013
+FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" 2020/12/09.03:07:34 P.20131013
+EN work/clock 1607494690 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clock/Behavioral 1607494691 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" \
+      EN work/clock 1607494690
+FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd" 2020/12/09.03:03:58 P.20131013
+EN work/data 1607494684 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/data/Behavioral 1607494685 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd" \
+      EN work/data 1607494684
+FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" 2020/12/09.15:18:00 P.20131013
+EN work/LCD_display 1607494688 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/LCD_display/Behavioral 1607494689 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" \
+      EN work/LCD_display 1607494688
+FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" 2020/12/09.14:56:06 P.20131013
+EN work/mode 1607494686 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mode/Behavioral 1607494687 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" \
+      EN work/mode 1607494686
+FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd" 2020/12/09.03:08:06 P.20131013
+EN work/waitinglist 1607494692 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/waitinglist/Behavioral 1607494693 \
+      FL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd" \
+      EN work/waitinglist 1607494692 CP data CP mode CP LCD_display CP clock
+FL C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/clock.vhd 2020/12/08.16:49:27 P.20131013
+FL C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/data.vhd 2020/12/08.03:44:34 P.20131013
+FL C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd 2020/12/08.17:22:12 P.20131013
+FL C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/mode.vhd 2020/12/08.17:17:12 P.20131013
+FL C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd 2020/12/08.16:28:25 P.20131013
+FL E:/Xilinx/Waitinglist_onyu/clock.vhd 2020/12/03.19:11:31 P.20131013
+FL E:/Xilinx/Waitinglist_onyu/data.vhd 2020/12/03.20:24:29 P.20131013
+FL E:/Xilinx/Waitinglist_onyu/LCD_display.vhd 2020/12/03.19:57:15 P.20131013
+FL E:/Xilinx/Waitinglist_onyu/mode.vhd 2020/12/03.20:26:07 P.20131013
+FL E:/Xilinx/Waitinglist_onyu/waitinglist.vhd 2020/12/03.20:26:29 P.20131013

@@ -1,0 +1,10 @@
+EN clock NULL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" sub00/vhpl08 1607494690
+EN waitinglist NULL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd" sub00/vhpl06 1607494692
+EN mode NULL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" sub00/vhpl02 1607494686
+AR waitinglist behavioral "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd" sub00/vhpl07 1607494693
+AR data behavioral "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd" sub00/vhpl01 1607494685
+AR clock behavioral "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" sub00/vhpl09 1607494691
+AR lcd_display behavioral "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" sub00/vhpl05 1607494689
+AR mode behavioral "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" sub00/vhpl03 1607494687
+EN data NULL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd" sub00/vhpl00 1607494684
+EN lcd_display NULL "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" sub00/vhpl04 1607494688

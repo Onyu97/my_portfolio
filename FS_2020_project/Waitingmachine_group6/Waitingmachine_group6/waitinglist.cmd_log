@@ -1,0 +1,212 @@
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Waitinglist_onyu/waitinglist.xst" -ofn "E:/Xilinx/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/logiccircuit/Waitinglist_onyu/waitinglist.xst" -ofn "C:/logiccircuit/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 waitinglist.ngc waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 
+xst -intstyle ise -ifn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.xst" -ofn "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc waitinglist.ucf -p xc3s200-pq208-4 "waitinglist.ngc" waitinglist.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o waitinglist_map.ncd waitinglist.ngd waitinglist.pcf 
+par -w -intstyle ise -ol high -t 1 waitinglist_map.ncd waitinglist.ncd waitinglist.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml waitinglist.twx waitinglist.ncd -o waitinglist.twr waitinglist.pcf -ucf waitinglist.ucf 
+bitgen -intstyle ise -f waitinglist.ut waitinglist.ncd 

@@ -1,0 +1,5 @@
+work	"LCD_display.vhd"
+work	"clock.vhd"
+work	"data.vhd"
+work	"mode.vhd"
+work	"waitinglist.vhd"

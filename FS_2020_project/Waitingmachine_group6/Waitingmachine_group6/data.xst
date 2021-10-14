@@ -1,0 +1,5 @@
+set -tmpdir "C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/xst/projnav.tmp"
+set -xsthdpdir "C:/logiccircuit/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/xst"
+elaborate
+-ifn data.prj
+-ifmt mixed

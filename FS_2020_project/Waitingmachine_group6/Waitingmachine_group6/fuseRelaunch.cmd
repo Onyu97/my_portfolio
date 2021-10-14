@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/logiccircuit/Waitinglist_onyu/total_TB_isim_beh.exe" -prj "C:/logiccircuit/Waitinglist_onyu/total_TB_beh.prj" "total_TB" 

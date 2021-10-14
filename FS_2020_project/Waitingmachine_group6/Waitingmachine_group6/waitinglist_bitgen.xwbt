@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\23529\Desktop\vhdl\Waitinglist_1208 (2)\Waitinglist_1208\Waitinglist_1208\Waitinglist_onyu\waitinglist.ncd
+OUTFILE=C:\Users\23529\Desktop\vhdl\Waitinglist_1208 (2)\Waitinglist_1208\Waitinglist_1208\Waitinglist_onyu\waitinglist.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Users\23529\Desktop\vhdl\Waitinglist_1208 (2)\Waitinglist_1208\Waitinglist_1208\Waitinglist_onyu
+LICENSE=WebPack
+USER_INFO=210844601_0_0_631

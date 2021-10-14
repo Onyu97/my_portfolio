@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/logiccircuit/Waitinglist_onyu/total_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="total_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/total_tb/fpga_rstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fpga_rstb</obj_property>
+      <obj_property name="ObjectShortName">fpga_rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/load_b1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b1</obj_property>
+      <obj_property name="ObjectShortName">load_b1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/load_b2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b2</obj_property>
+      <obj_property name="ObjectShortName">load_b2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/load_b3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b3</obj_property>
+      <obj_property name="ObjectShortName">load_b3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/load_s1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_s1</obj_property>
+      <obj_property name="ObjectShortName">load_s1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/load_s2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_s2</obj_property>
+      <obj_property name="ObjectShortName">load_s2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/load_s3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_s3</obj_property>
+      <obj_property name="ObjectShortName">load_s3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/number" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">number[3:0]</obj_property>
+      <obj_property name="ObjectShortName">number[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/lcd_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_a[1:0]</obj_property>
+      <obj_property name="ObjectShortName">lcd_a[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/lcd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_en</obj_property>
+      <obj_property name="ObjectShortName">lcd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/lcd_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_d[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lcd_d[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/digit" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">digit[6:1]</obj_property>
+      <obj_property name="ObjectShortName">digit[6:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_a</obj_property>
+      <obj_property name="ObjectShortName">seg_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_b</obj_property>
+      <obj_property name="ObjectShortName">seg_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_c" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_c</obj_property>
+      <obj_property name="ObjectShortName">seg_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_d</obj_property>
+      <obj_property name="ObjectShortName">seg_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_e</obj_property>
+      <obj_property name="ObjectShortName">seg_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_f" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_f</obj_property>
+      <obj_property name="ObjectShortName">seg_f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_g" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_g</obj_property>
+      <obj_property name="ObjectShortName">seg_g</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/seg_dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_dp</obj_property>
+      <obj_property name="ObjectShortName">seg_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/uut/clockport/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/uut/clockport/push_ent_temp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">push_ent_temp</obj_property>
+      <obj_property name="ObjectShortName">push_ent_temp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/uut/dataport/mode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_tb/uut/dataport/cnt3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt3[4:0]</obj_property>
+   </wvobject>
+</wave_config>

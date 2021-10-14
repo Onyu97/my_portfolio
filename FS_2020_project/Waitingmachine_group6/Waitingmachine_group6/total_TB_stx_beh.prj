@@ -1,0 +1,6 @@
+vhdl isim_temp "mode.vhd"
+vhdl isim_temp "LCD_display.vhd"
+vhdl isim_temp "data.vhd"
+vhdl isim_temp "clock.vhd"
+vhdl isim_temp "waitinglist.vhd"
+vhdl isim_temp "total_TB.vhd"

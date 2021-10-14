@@ -1,0 +1,980 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: waitinglist.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "waitinglist.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "waitinglist"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : waitinglist
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd" in Library work.
+Architecture behavioral of Entity data is up to date.
+Compiling vhdl file "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" in Library work.
+Architecture behavioral of Entity mode is up to date.
+Compiling vhdl file "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" in Library work.
+Entity <lcd_display> compiled.
+Entity <lcd_display> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" in Library work.
+Architecture behavioral of Entity clock is up to date.
+Compiling vhdl file "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd" in Library work.
+Architecture behavioral of Entity waitinglist is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <waitinglist> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mode> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <LCD_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clock> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <waitinglist> in library <work> (Architecture <behavioral>).
+Entity <waitinglist> analyzed. Unit <waitinglist> generated.
+
+Analyzing Entity <data> in library <work> (Architecture <behavioral>).
+Entity <data> analyzed. Unit <data> generated.
+
+Analyzing Entity <mode> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd" line 45: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mode>
+INFO:Xst:2679 - Register <reg_file<31>> in unit <mode> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+Entity <mode> analyzed. Unit <mode> generated.
+
+Analyzing Entity <LCD_display> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd" line 110: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reg_file>
+Entity <LCD_display> analyzed. Unit <LCD_display> generated.
+
+Analyzing Entity <clock> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd" line 48: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <hr10_cnt>, <hr01_cnt>, <min10_cnt>, <min01_cnt>, <sec10_cnt>, <sec01_cnt>
+INFO:Xst:2679 - Register <h10_cnt> in unit <clock> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <m01_cnt> in unit <clock> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+Entity <clock> analyzed. Unit <clock> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <data>.
+    Related source file is "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/data.vhd".
+    Found 8-bit 32-to-1 multiplexer for signal <data0>.
+    Found 8-bit 32-to-1 multiplexer for signal <data1>.
+    Found 8-bit 32-to-1 multiplexer for signal <data2>.
+    Found 8-bit 32-to-1 multiplexer for signal <data3>.
+    Found 8-bit 32-to-1 multiplexer for signal <data4>.
+    Found 8-bit 32-to-1 multiplexer for signal <mydata>.
+    Found 5-bit up counter for signal <cnt2>.
+    Found 1-bit xor2 for signal <cnt2$xor0000> created at line 123.
+    Found 5-bit up counter for signal <cnt3>.
+    Found 1-bit xor2 for signal <cnt3$xor0000> created at line 128.
+    Found 1-bit xor2 for signal <cnt3$xor0001> created at line 128.
+    Found 5-bit adder for signal <cnt3_1$addsub0000> created at line 51.
+    Found 5-bit adder for signal <cnt3_2$addsub0000> created at line 52.
+    Found 5-bit adder for signal <cnt3_3$addsub0000> created at line 53.
+    Found 5-bit adder for signal <cnt3_4$addsub0000> created at line 54.
+    Found 8-bit register for signal <numwhole>.
+    Found 1-bit register for signal <prepush_ent>.
+    Found 1-bit register for signal <pretempcnt2>.
+    Found 1-bit register for signal <pretempcnt3>.
+    Found 256-bit register for signal <ram>.
+    Found 3-bit register for signal <temp_mode>.
+    Found 1-bit register for signal <tempcnt2>.
+    Found 1-bit register for signal <tempcnt3>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <ram>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 272 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  48 Multiplexer(s).
+Unit <data> synthesized.
+
+
+Synthesizing Unit <mode>.
+    Related source file is "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/mode.vhd".
+    Found 5-bit register for signal <addr>.
+    Found 1-bit register for signal <data_out>.
+    Found 8-bit register for signal <data>.
+    Found 8-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 258.
+    Found 5-bit subtractor for signal <ahead$addsub0000> created at line 43.
+    Found 5-bit up counter for signal <cnt>.
+    Found 5-bit register for signal <num_1>.
+    Found 5-bit subtractor for signal <num_1$share0000>.
+    Found 248-bit register for signal <reg_file<0:30>>.
+    Found 8-bit adder for signal <reg_file_1$addsub0000> created at line 61.
+    Found 8-bit adder for signal <reg_file_10$addsub0000> created at line 72.
+    Found 8-bit adder for signal <reg_file_11$addsub0000> created at line 131.
+    Found 8-bit adder for signal <reg_file_12$addsub0000> created at line 132.
+    Found 8-bit adder for signal <reg_file_13$addsub0000> created at line 76.
+    Found 8-bit adder for signal <reg_file_14$addsub0000> created at line 77.
+    Found 5-bit comparator greater for signal <reg_file_16$cmp_gt0000> created at line 137.
+    Found 5-bit comparator greater for signal <reg_file_16$cmp_gt0001> created at line 140.
+    Found 5-bit comparator greater for signal <reg_file_16$cmp_gt0002> created at line 145.
+    Found 8-bit adder for signal <reg_file_17$add0000> created at line 140.
+    Found 8-bit adder for signal <reg_file_17$addsub0000> created at line 154.
+    Found 8-bit adder for signal <reg_file_2$addsub0000> created at line 62.
+    Found 8-bit adder for signal <reg_file_30$addsub0000> created at line 112.
+    Found 5-bit comparator greater for signal <reg_file_30$cmp_gt0000> created at line 95.
+    Found 5-bit comparator greater for signal <reg_file_30$cmp_gt0001> created at line 98.
+    Found 5-bit comparator greater for signal <reg_file_30$cmp_gt0002> created at line 103.
+    Found 8-bit adder for signal <reg_file_5$addsub0000> created at line 66.
+    Found 8-bit adder for signal <reg_file_6$addsub0000> created at line 67.
+    Found 8-bit adder for signal <reg_file_8$addsub0000> created at line 184.
+    Found 8-bit adder for signal <reg_file_9$share0000>.
+    Found 5-bit comparator greater for signal <tot_num$cmp_gt0000> created at line 40.
+    Found 5-bit subtractor for signal <tot_num$sub0000> created at line 40.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  19 D-type flip-flop(s).
+	inferred  17 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <mode> synthesized.
+
+
+Synthesizing Unit <LCD_display>.
+    Related source file is "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/LCD_display.vhd".
+WARNING:Xst:1780 - Signal <lcd_cnt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <lcd_db>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <lcd_state>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <lcd_state> of Case statement line 115 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <lcd_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <lcd_state> of Case statement line 115 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <lcd_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 1-bit register for signal <clk_100k>.
+    Found 1-bit register for signal <clk_50>.
+    Found 8-bit up counter for signal <cnt_100k>.
+    Found 12-bit up counter for signal <cnt_50>.
+    Found 39-bit register for signal <lcd_state>.
+    Found 256-bit register for signal <reg_file>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <reg_file>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <LCD_display> synthesized.
+
+
+Synthesizing Unit <clock>.
+    Related source file is "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/clock.vhd".
+WARNING:Xst:646 - Signal <tot_num_5bit<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <s10_cnt>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 9                                              |
+    | Clock              | s01_clk                   (rising_edge)        |
+    | Reset              | FPGA_RSTB                 (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11x8-bit ROM for signal <seg$mux0000>.
+    Found 6x6-bit ROM for signal <DIGIT$mux0000>.
+WARNING:Xst:737 - Found 4-bit latch for signal <data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <seg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <DIGIT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 21-bit up counter for signal <count_clk>.
+    Found 4-bit 6-to-1 multiplexer for signal <data$mux0000>.
+    Found 4-bit register for signal <h01_cnt>.
+    Found 4-bit register for signal <m10_cnt>.
+    Found 4-bit subtractor for signal <m10_cnt$addsub0000> created at line 209.
+    Found 5-bit comparator less for signal <m10_cnt$cmp_lt0000> created at line 204.
+    Found 5-bit comparator less for signal <m10_cnt$cmp_lt0001> created at line 206.
+    Found 5-bit comparator less for signal <m10_cnt$cmp_lt0002> created at line 209.
+    Found 5-bit comparator less for signal <m10_cnt$cmp_lt0003> created at line 213.
+    Found 1-bit register for signal <push_ent_temp>.
+    Found 1-bit register for signal <s01_clk>.
+    Found 4-bit register for signal <s01_cnt>.
+    Found 4-bit subtractor for signal <s01_cnt$addsub0000> created at line 244.
+    Found 8-bit up counter for signal <seg_clk_cnt>.
+    Found 3-bit up counter for signal <sel>.
+    Found 5-bit subtractor for signal <tot_num$addsub0000> created at line 183.
+    Found 5-bit comparator greater for signal <tot_num$cmp_gt0000> created at line 183.
+    Found 5-bit register for signal <tot_num_5bit>.
+    Found 5-bit comparator greatequal for signal <tot_num_5bit$cmp_ge0000> created at line 213.
+    Found 5-bit subtractor for signal <tot_num_5bit$mux0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred   3 Counter(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <clock> synthesized.
+
+
+Synthesizing Unit <waitinglist>.
+    Related source file is "C:/Users/23529/Desktop/vhdl/Waitinglist_1208 (2)/Waitinglist_1208/Waitinglist_1208/Waitinglist_onyu/waitinglist.vhd".
+Unit <waitinglist> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 11x8-bit ROM                                          : 1
+ 6x6-bit ROM                                           : 1
+# Adders/Subtractors                                   : 25
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 5
+ 8-bit adder                                           : 14
+# Counters                                             : 8
+ 12-bit up counter                                     : 1
+ 21-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 5-bit up counter                                      : 3
+ 8-bit up counter                                      : 2
+# Registers                                            : 122
+ 1-bit register                                        : 18
+ 3-bit register                                        : 1
+ 39-bit register                                       : 1
+ 4-bit register                                        : 3
+ 5-bit register                                        : 3
+ 8-bit register                                        : 96
+# Latches                                              : 4
+ 4-bit latch                                           : 1
+ 6-bit latch                                           : 1
+ 8-bit latch                                           : 2
+# Comparators                                          : 13
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator greater                              : 8
+ 5-bit comparator less                                 : 4
+# Multiplexers                                         : 8
+ 4-bit 6-to-1 multiplexer                              : 1
+ 8-bit 32-to-1 multiplexer                             : 7
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <clockport/s10_cnt/FSM> on signal <s10_cnt[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0010  | 01
+ 0011  | 11
+ 0001  | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <h01_cnt_3> (without init value) has a constant value of 0 in block <clockport>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <tot_num_5bit_4> of sequential type is unconnected in block <clockport>.
+WARNING:Xst:2677 - Node <tot_num_5bit_4> of sequential type is unconnected in block <clock>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 11x8-bit ROM                                          : 1
+ 6x6-bit ROM                                           : 1
+# Adders/Subtractors                                   : 25
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 5
+ 8-bit adder                                           : 14
+# Counters                                             : 8
+ 12-bit up counter                                     : 1
+ 21-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 5-bit up counter                                      : 3
+ 8-bit up counter                                      : 2
+# Registers                                            : 854
+ Flip-Flops                                            : 854
+# Latches                                              : 4
+ 4-bit latch                                           : 1
+ 6-bit latch                                           : 1
+ 8-bit latch                                           : 2
+# Comparators                                          : 13
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator greater                              : 8
+ 5-bit comparator less                                 : 4
+# Multiplexers                                         : 8
+ 4-bit 6-to-1 multiplexer                              : 1
+ 8-bit 32-to-1 multiplexer                             : 7
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <h01_cnt_3> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_file_24_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_24_4> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_24_1> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_19_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_19_3> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_19_2> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_19_1> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_23_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_23_1> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_18_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_18_3> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_18_1> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_18_0> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_22_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_22_0> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_17_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_21_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_21_4> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_16_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_16_3> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_20_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_20_4> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_20_1> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_15_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_15_6> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_15_0> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_14_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_14_6> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_13_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_13_6> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_12_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_12_6> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_11_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_11_6> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_10_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_10_6> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_9_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_8_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_7_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_7_0> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_6_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_5_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_4_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_3_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_2_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_29_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_29_3> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_25_0> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_25_2> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_25_3> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_25_4> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_25_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_30_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_26_1> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_26_3> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_26_4> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_26_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_27_0> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_27_2> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_27_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_28_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_1_7> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_29_2> (without init value) has a constant value of 0 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_7> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <reg_file_9_5> in Unit <mode> is equivalent to the following FF/Latch, which will be removed : <reg_file_8_5> 
+INFO:Xst:2261 - The FF/Latch <reg_file_9_6> in Unit <mode> is equivalent to the following FF/Latch, which will be removed : <reg_file_8_6> 
+
+Optimizing unit <waitinglist> ...
+
+Optimizing unit <data> ...
+
+Optimizing unit <mode> ...
+WARNING:Xst:1710 - FF/Latch <reg_file_11_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_14_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_13_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_12_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_file_10_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_15_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_file_10_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <reg_file_15_5> (without init value) has a constant value of 1 in block <mode>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <LCD_display> ...
+
+Optimizing unit <clock> ...
+WARNING:Xst:1710 - FF/Latch <LCD_displayport/reg_file_11_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_10_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_9_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_8_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_7_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_6_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_5_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_4_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_3_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_2_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_29_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_1_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_28_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_0_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_27_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_31_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_26_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_30_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_25_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_24_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_19_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_23_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_18_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_22_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_17_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_21_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_16_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_20_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_15_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_14_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_13_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_displayport/reg_file_12_7> (without init value) has a constant value of 0 in block <waitinglist>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block waitinglist, actual ratio is 56.
+FlipFlop dataport/cnt2_0 has been replicated 1 time(s)
+FlipFlop dataport/cnt2_1 has been replicated 1 time(s)
+FlipFlop dataport/cnt2_2 has been replicated 1 time(s)
+FlipFlop dataport/cnt2_3 has been replicated 1 time(s)
+FlipFlop dataport/cnt3_0 has been replicated 1 time(s)
+FlipFlop dataport/cnt3_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 825
+ Flip-Flops                                            : 825
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : waitinglist.ngr
+Top Level Output File Name         : waitinglist
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 2772
+#      GND                         : 1
+#      INV                         : 22
+#      LUT1                        : 46
+#      LUT2                        : 123
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 927
+#      LUT3_D                      : 4
+#      LUT4                        : 513
+#      LUT4_D                      : 10
+#      LUT4_L                      : 21
+#      MUXCY                       : 178
+#      MUXF5                       : 479
+#      MUXF6                       : 220
+#      MUXF7                       : 110
+#      MUXF8                       : 55
+#      VCC                         : 1
+#      XORCY                       : 59
+# FlipFlops/Latches                : 850
+#      FDC                         : 242
+#      FDCE                        : 498
+#      FDE                         : 25
+#      FDP                         : 26
+#      FDPE                        : 34
+#      LD                          : 25
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 11
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                     1082  out of   1920    56%  
+ Number of Slice Flip Flops:            829  out of   3840    21%  
+ Number of 4 input LUTs:               1669  out of   3840    43%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    141    26%  
+    IOB Flip Flops:                      21
+ Number of GCLKs:                         3  out of      8    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+---------------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)           | Load  |
+-----------------------------------------------+---------------------------------+-------+
+CLK                                            | BUFGP                           | 755   |
+LCD_displayport/clk_501                        | BUFG                            | 39    |
+FPGA_RSTB                                      | IBUF+BUFG                       | 8     |
+LCD_displayport/clk_100k                       | NONE(LCD_displayport/cnt_50_11) | 13    |
+clockport/seg_or0000(clockport/seg_or00001:O)  | NONE(*)(clockport/seg_6)        | 7     |
+clockport/s01_clk                              | NONE(clockport/s10_cnt_FSM_FFd2)| 18    |
+clockport/data_or0000(clockport/data_or00001:O)| NONE(*)(clockport/data_3)       | 10    |
+-----------------------------------------------+---------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------+-------------------------------+-------+
+Control Signal                                                | Buffer(FF name)               | Load  |
+--------------------------------------------------------------+-------------------------------+-------+
+LCD_displayport/FPGA_RSTB_inv(modeport/FPGA_RSTB_inv1_INV_0:O)| NONE(LCD_displayport/clk_100k)| 622   |
+modeport/reg_file_0_Acst_inv(modeport/reg_file_0_Acst_inv1:O) | NONE(modeport/reg_file_0_0)   | 178   |
+--------------------------------------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.102ns (Maximum Frequency: 76.321MHz)
+   Minimum input arrival time before clock: 8.054ns
+   Maximum output required time after clock: 10.673ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 13.102ns (frequency: 76.321MHz)
+  Total number of paths / destination ports: 17749 / 1258
+-------------------------------------------------------------------------
+Delay:               13.102ns (Levels of Logic = 9)
+  Source:            dataport/cnt3_2 (FF)
+  Destination:       modeport/num_1_4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: dataport/cnt3_2 to modeport/num_1_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            49   0.720   2.145  dataport/cnt3_2 (dataport/cnt3_2)
+     LUT2:I1->O            1   0.551   0.000  modeport/Msub_tot_num_sub0000_lut<2> (modeport/Msub_tot_num_sub0000_lut<2>)
+     XORCY:LI->O           9   0.622   1.192  modeport/Msub_tot_num_sub0000_xor<2> (modeport/tot_num_sub0000<2>)
+     LUT3:I2->O            1   0.551   0.869  modeport/Msub_ahead_addsub0000_cy<2>11 (modeport/Msub_ahead_addsub0000_cy<2>)
+     LUT4_D:I2->O         10   0.551   1.160  modeport/ahead<4>1 (modeport/Madd_reg_file_17_addsub0000_cy<4>)
+     LUT4:I3->O            2   0.551   0.945  modeport/num_1_mux0002<1>_SW0 (N149)
+     LUT4:I2->O            1   0.551   0.000  modeport/Msub_num_1_share0000_cy<2>11_F (N187)
+     MUXF5:I0->O           2   0.360   0.903  modeport/Msub_num_1_share0000_cy<2>11 (modeport/Msub_num_1_share0000_cy<2>)
+     LUT4_L:I3->LO         1   0.551   0.126  modeport/num_1_mux0000<4>_SW0 (N151)
+     LUT4:I3->O            1   0.551   0.000  modeport/num_1_mux0000<4> (modeport/num_1_mux0000<4>)
+     FDE:D                     0.203          modeport/num_1_4
+    ----------------------------------------
+    Total                     13.102ns (5.762ns logic, 7.340ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LCD_displayport/clk_501'
+  Clock period: 2.752ns (frequency: 363.372MHz)
+  Total number of paths / destination ports: 39 / 38
+-------------------------------------------------------------------------
+Delay:               2.752ns (Levels of Logic = 1)
+  Source:            LCD_displayport/lcd_state_6 (FF)
+  Destination:       LCD_displayport/lcd_state_7 (FF)
+  Source Clock:      LCD_displayport/clk_501 rising
+  Destination Clock: LCD_displayport/clk_501 rising
+
+  Data Path: LCD_displayport/lcd_state_6 to LCD_displayport/lcd_state_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.720   1.278  LCD_displayport/lcd_state_6 (LCD_displayport/lcd_state_6)
+     LUT2:I1->O            1   0.551   0.000  LCD_displayport/lcd_nstate<7>1 (LCD_displayport/lcd_nstate<7>)
+     FDC:D                     0.203          LCD_displayport/lcd_state_7
+    ----------------------------------------
+    Total                      2.752ns (1.474ns logic, 1.278ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LCD_displayport/clk_100k'
+  Clock period: 6.361ns (frequency: 157.208MHz)
+  Total number of paths / destination ports: 235 / 14
+-------------------------------------------------------------------------
+Delay:               6.361ns (Levels of Logic = 13)
+  Source:            LCD_displayport/cnt_50_1 (FF)
+  Destination:       LCD_displayport/cnt_50_11 (FF)
+  Source Clock:      LCD_displayport/clk_100k rising
+  Destination Clock: LCD_displayport/clk_100k rising
+
+  Data Path: LCD_displayport/cnt_50_1 to LCD_displayport/cnt_50_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.216  LCD_displayport/cnt_50_1 (LCD_displayport/cnt_50_1)
+     LUT1:I0->O            1   0.551   0.000  LCD_displayport/Mcount_cnt_50_cy<1>_rt (LCD_displayport/Mcount_cnt_50_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  LCD_displayport/Mcount_cnt_50_cy<1> (LCD_displayport/Mcount_cnt_50_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<2> (LCD_displayport/Mcount_cnt_50_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<3> (LCD_displayport/Mcount_cnt_50_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<4> (LCD_displayport/Mcount_cnt_50_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<5> (LCD_displayport/Mcount_cnt_50_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<6> (LCD_displayport/Mcount_cnt_50_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<7> (LCD_displayport/Mcount_cnt_50_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<8> (LCD_displayport/Mcount_cnt_50_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<9> (LCD_displayport/Mcount_cnt_50_cy<9>)
+     MUXCY:CI->O           0   0.064   0.000  LCD_displayport/Mcount_cnt_50_cy<10> (LCD_displayport/Mcount_cnt_50_cy<10>)
+     XORCY:CI->O           1   0.904   1.140  LCD_displayport/Mcount_cnt_50_xor<11> (LCD_displayport/Result<11>)
+     LUT4:I0->O            1   0.551   0.000  LCD_displayport/Mcount_cnt_50_eqn_111 (LCD_displayport/Mcount_cnt_50_eqn_11)
+     FDC:D                     0.203          LCD_displayport/cnt_50_11
+    ----------------------------------------
+    Total                      6.361ns (4.005ns logic, 2.356ns route)
+                                       (63.0% logic, 37.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockport/s01_clk'
+  Clock period: 6.310ns (frequency: 158.479MHz)
+  Total number of paths / destination ports: 71 / 15
+-------------------------------------------------------------------------
+Delay:               6.310ns (Levels of Logic = 4)
+  Source:            clockport/s01_cnt_0 (FF)
+  Destination:       clockport/s01_cnt_3 (FF)
+  Source Clock:      clockport/s01_clk rising
+  Destination Clock: clockport/s01_clk rising
+
+  Data Path: clockport/s01_cnt_0 to clockport/s01_cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.382  clockport/s01_cnt_0 (clockport/s01_cnt_0)
+     LUT3:I1->O            1   0.551   0.996  clockport/s01_cnt_mux0004<0>6 (clockport/s01_cnt_mux0004<0>6)
+     LUT4:I1->O            1   0.551   0.000  clockport/s01_cnt_mux0004<0>312 (clockport/s01_cnt_mux0004<0>312)
+     MUXF5:I0->O           1   0.360   0.996  clockport/s01_cnt_mux0004<0>31_f5 (clockport/s01_cnt_mux0004<0>31)
+     LUT4:I1->O            1   0.551   0.000  clockport/s01_cnt_mux0004<0>53 (clockport/s01_cnt_mux0004<0>)
+     FDC:D                     0.203          clockport/s01_cnt_3
+    ----------------------------------------
+    Total                      6.310ns (2.936ns logic, 3.374ns route)
+                                       (46.5% logic, 53.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 79 / 46
+-------------------------------------------------------------------------
+Offset:              5.475ns (Levels of Logic = 3)
+  Source:            load_b3 (PAD)
+  Destination:       dataport/temp_mode_2 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: load_b3 to dataport/temp_mode_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.216  load_b3_IBUF (load_b3_IBUF)
+     LUT3:I0->O            1   0.551   0.827  dataport/temp_mode_not0001_SW0 (N14)
+     LUT4:I3->O            3   0.551   0.907  dataport/temp_mode_not0001 (dataport/temp_mode_not0001)
+     FDCE:CE                   0.602          dataport/temp_mode_0
+    ----------------------------------------
+    Total                      5.475ns (2.525ns logic, 2.950ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LCD_displayport/clk_501'
+  Total number of paths / destination ports: 39 / 39
+-------------------------------------------------------------------------
+Offset:              8.054ns (Levels of Logic = 2)
+  Source:            FPGA_RSTB (PAD)
+  Destination:       LCD_displayport/lcd_state_0 (FF)
+  Destination Clock: LCD_displayport/clk_501 rising
+
+  Data Path: FPGA_RSTB to LCD_displayport/lcd_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   0.821   1.945  FPGA_RSTB_IBUF (FPGA_RSTB_IBUF1)
+     INV:I->O            623   0.551   4.534  modeport/FPGA_RSTB_inv1_INV_0 (LCD_displayport/FPGA_RSTB_inv)
+     FDP:D                     0.203          LCD_displayport/lcd_state_0
+    ----------------------------------------
+    Total                      8.054ns (1.575ns logic, 6.479ns route)
+                                       (19.6% logic, 80.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clockport/s01_clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.031ns (Levels of Logic = 2)
+  Source:            FPGA_RSTB (PAD)
+  Destination:       clockport/tot_num_5bit_3 (FF)
+  Destination Clock: clockport/s01_clk rising
+
+  Data Path: FPGA_RSTB to clockport/tot_num_5bit_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   0.821   2.140  FPGA_RSTB_IBUF (FPGA_RSTB_IBUF1)
+     LUT4:I1->O            4   0.551   0.917  clockport/tot_num_5bit_and00001 (clockport/tot_num_5bit_and0000)
+     FDE:CE                    0.602          clockport/tot_num_5bit_0
+    ----------------------------------------
+    Total                      5.031ns (1.974ns logic, 3.057ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LCD_displayport/clk_100k'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.271ns (Levels of Logic = 1)
+  Source:            LCD_displayport/clk_50 (FF)
+  Destination:       LCD_EN (PAD)
+  Source Clock:      LCD_displayport/clk_100k rising
+
+  Data Path: LCD_displayport/clk_50 to LCD_EN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.720   0.907  LCD_displayport/clk_50 (LCD_displayport/clk_501)
+     OBUF:I->O                 5.644          LCD_EN_OBUF (LCD_EN)
+    ----------------------------------------
+    Total                      7.271ns (6.364ns logic, 0.907ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockport/seg_or0000'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            clockport/seg_0 (LATCH)
+  Destination:       SEG_A (PAD)
+  Source Clock:      clockport/seg_or0000 falling
+
+  Data Path: clockport/seg_0 to SEG_A
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   0.801  clockport/seg_0 (clockport/seg_0)
+     OBUF:I->O                 5.644          SEG_A_OBUF (SEG_A)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockport/data_or0000'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            clockport/DIGIT_5 (LATCH)
+  Destination:       DIGIT<6> (PAD)
+  Source Clock:      clockport/data_or0000 falling
+
+  Data Path: clockport/DIGIT_5 to DIGIT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   0.801  clockport/DIGIT_5 (clockport/DIGIT_5)
+     OBUF:I->O                 5.644          DIGIT_6_OBUF (DIGIT<6>)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LCD_displayport/clk_501'
+  Total number of paths / destination ports: 7 / 1
+-------------------------------------------------------------------------
+Offset:              10.673ns (Levels of Logic = 3)
+  Source:            LCD_displayport/lcd_state_2 (FF)
+  Destination:       LCD_A<0> (PAD)
+  Source Clock:      LCD_displayport/clk_501 rising
+
+  Data Path: LCD_displayport/lcd_state_2 to LCD_A<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.246  LCD_displayport/lcd_state_2 (LCD_displayport/lcd_state_2)
+     LUT4:I0->O            1   0.551   0.827  LCD_displayport/reg_file_0_and000011_SW0 (N16)
+     LUT4:I3->O           10   0.551   1.134  LCD_displayport/reg_file_0_and000011 (LCD_A_0_OBUF)
+     OBUF:I->O                 5.644          LCD_A_0_OBUF (LCD_A<0>)
+    ----------------------------------------
+    Total                     10.673ns (7.466ns logic, 3.207ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FPGA_RSTB'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            LCD_displayport/lcd_db_7 (LATCH)
+  Destination:       LCD_D<7> (PAD)
+  Source Clock:      FPGA_RSTB falling
+
+  Data Path: LCD_displayport/lcd_db_7 to LCD_D<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   0.801  LCD_displayport/lcd_db_7 (LCD_displayport/lcd_db_7)
+     OBUF:I->O                 5.644          LCD_D_7_OBUF (LCD_D<7>)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.31 secs
+ 
+--> 
+
+Total memory usage is 4555048 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  119 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

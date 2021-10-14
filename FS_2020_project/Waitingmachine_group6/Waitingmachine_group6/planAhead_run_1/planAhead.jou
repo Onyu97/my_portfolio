@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Dec 03 15:56:25 2020
+# Process ID: 20908
+# Log file: E:/Xilinx/Waitinglist_onyu/planAhead_run_1/planAhead.log
+# Journal file: E:/Xilinx/Waitinglist_onyu/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/Xilinx/Waitinglist_onyu/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P18 [get_ports load_b1]
+endgroup
+startgroup
+set_property package_pin P19 [get_ports load_b2]
+endgroup
+startgroup
+set_property package_pin P20 [get_ports load_b3]
+endgroup
+startgroup
+set_property package_pin P22 [get_ports {DIGIT[1]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {DIGIT[2]}]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports {DIGIT[3]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {DIGIT[4]}]
+endgroup
+startgroup
+set_property package_pin P28 [get_ports {DIGIT[5]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {DIGIT[6]}]
+endgroup
+startgroup
+set_property package_pin P31 [get_ports SEG_A]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports SEG_B]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports SEG_C]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports SEG_D]
+endgroup
+startgroup
+set_property package_pin P36 [get_ports SEG_DP]
+endgroup
+set_property package_pin "" [get_ports [list  SEG_F]]
+startgroup
+set_property package_pin P37 [get_ports SEG_E]
+endgroup
+set_property package_pin "" [get_ports [list  SEG_F]]
+startgroup
+set_property package_pin P37 [get_ports SEG_E]
+endgroup
+set_property package_pin "" [get_ports [list  SEG_F]]
+startgroup
+set_property package_pin P31 [get_ports SEG_A]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports SEG_C]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports SEG_D]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports SEG_DP]
+endgroup
+startgroup
+set_property package_pin P36 [get_ports SEG_E]
+endgroup
+startgroup
+set_property package_pin P37 [get_ports SEG_F]
+endgroup
+startgroup
+set_property package_pin P39 [get_ports SEG_G]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin P205 [get_ports FPGA_RSTB]
+endgroup
+startgroup
+set_property package_pin P52 [get_ports LCD_EN]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {LCD_D[0]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {LCD_D[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {LCD_D[1]}]]
+set_property package_pin "" [get_ports [list  {LCD_D[3]}]]
+startgroup
+set_property package_pin P61 [get_ports {LCD_D[2]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {LCD_D[1]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {LCD_D[3]}]
+endgroup
+startgroup
+set_property package_pin P63 [get_ports {LCD_D[4]}]
+endgroup
+startgroup
+set_property package_pin P64 [get_ports {LCD_D[5]}]
+endgroup
+startgroup
+set_property package_pin P65 [get_ports {LCD_D[6]}]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports {LCD_D[7]}]
+endgroup
+startgroup
+set_property package_pin P50 [get_ports {LCD_A[0]}]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports {LCD_A[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {number[0]}]]
+set_property package_pin "" [get_ports [list  {number[1]}]]
+startgroup
+set_property package_pin P16 [get_ports {number[0]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {number[1]}]
+endgroup
+startgroup
+set_property package_pin P13 [get_ports {number[2]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {number[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  load_s1]]
+set_property package_pin "" [get_ports [list  load_s2]]
+set_property package_pin "" [get_ports [list  load_s1]]
+startgroup
+set_property package_pin P102 [get_ports load_b1]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports load_b2]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports load_b3]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports load_s1]
+endgroup
+startgroup
+set_property package_pin P19 [get_ports load_s2]
+endgroup
+startgroup
+set_property package_pin P20 [get_ports load_s3]
+endgroup
+startgroup
+set_property package_pin P52 [get_ports LCD_EN]
+endgroup
+save_constraints

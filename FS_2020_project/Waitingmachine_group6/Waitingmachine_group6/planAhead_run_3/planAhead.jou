@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Dec 08 13:52:19 2020
+# Process ID: 11968
+# Log file: C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/23529/Desktop/vhdl/Waitinglist_1208/Waitinglist_onyu/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P48 [get_ports SEG_DP]
+endgroup
+save_constraints

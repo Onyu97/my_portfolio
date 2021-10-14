@@ -1,0 +1,6 @@
+vhdl work "mode.vhd"
+vhdl work "LCD_display.vhd"
+vhdl work "data.vhd"
+vhdl work "clock.vhd"
+vhdl work "waitinglist.vhd"
+vhdl work "total_TB.vhd"
